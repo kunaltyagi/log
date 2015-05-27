@@ -80,6 +80,14 @@ inline bool colorEnabled(bool color = __COLOR__)
 #endif
 }
 
+/**
+ * I use it for the following folder structure 
+ * /home/username/workspace/-|
+ *                           |-src/project_name/auv_<package>/-|
+ *                           |                                 |-src/*
+ *                           |                                 |-include/*
+ *                           |-build/
+ */
 inline std::string getNormalHeader(std::string fullNamePath, int length = 4)
 {
     assert(length > -1);
